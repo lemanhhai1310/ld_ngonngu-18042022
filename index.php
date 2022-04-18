@@ -1,7 +1,60 @@
 <?php $data["title"] = "Trang chủ"; ?>
 <?php $body = '' ?>
 <?php require "template-parts/layouts/header.php"; ?>
-
+<div class="home__timhieu uk-background-norepeat uk-background-center-center uk-background-cover uk-position-relative" data-src="images/1x/bg1_2.png" uk-img>
+    <img class="uk-position-bottom-center uk-visible@m" src="images/1x/img1_1.png" alt="">
+    <div class="home__timhieu__section uk-flex uk-flex-middle">
+        <div class="uk-section uk-width-1-1">
+            <div class="uk-container">
+                <div uk-grid>
+                    <div class="uk-width-expand">
+                        <div class="home__timhieu__title">
+                            TÌM HIỂU CÁC <br>
+                            NGÀNH  NGÔN NGỮ <br>
+                            TẠI ĐẠI HỌC FPT
+                        </div>
+                        <ul class="uk-list home__timhieu__list">
+                            <li>• Ngôn ngữ Nhật</li>
+                            <li>• Ngôn ngữ Anh</li>
+                            <li>• Ngôn ngữ Hàn</li>
+                        </ul>
+                    </div>
+                    <div class="uk-width-1-3@m">
+                        <div class="home__dangky__card uk-card uk-card-default uk-card-body">
+                            <div class="item__30">
+                                <div class="uk-text-center home__dangky__card__title">ĐĂNG KÝ TƯ VẤN</div>
+                            </div>
+                            <div class="item__30">
+                                <div class="item__16">
+                                    <input class="uk-input home__dangky__card__input" type="text" placeholder="Họ và tên">
+                                </div>
+                                <div class="item__16">
+                                    <input class="uk-input home__dangky__card__input" type="tel" placeholder="Điện thoại">
+                                </div>
+                                <div class="item__16">
+                                    <input class="uk-input home__dangky__card__input" type="email" placeholder="Email">
+                                </div>
+                                <div class="item__16">
+                                    <input class="uk-input home__dangky__card__input" type="text" placeholder="Tỉnh / Thành phố">
+                                </div>
+                            </div>
+                            <div class="item__30 uk-text-center">
+                                <button class="home__dangky__card__btn uk-button uk-button-default uk-border-pill"><span>ĐĂNG KÝ</span></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="uk-hidden@m">
+                        <div class="uk-flex-center" uk-grid>
+                            <div class="uk-width-4-5">
+                                <img class="" src="images/1x/img1_1.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 <!--DOANH NGHIỆP TUYỂN DỤNG SINH VIÊN ĐẠI HỌC FPT-->
 <div class="uk-section home__doanhnghiep__section">
     <div class="uk-container">

@@ -1,4 +1,30 @@
 .home{
+  &__timhieu{
+    background-color: #D67126;
+    &__section{
+      min-height: 720px;
+      .uk-section{
+        @include media-breakpoint-down('s'){
+          padding-top: 100px;
+          padding-bottom: 0 !important;
+        }
+      }
+    }
+    &__title{
+      color: #FFFFFF;
+      @extend .fz-42;
+      font-family: $font-BeVietnamPro-Black;
+      line-height: (52/42);
+    }
+    &__list{
+      >li{
+        margin: 0 !important;
+        color: #FFFFFF;
+        @extend .fz-24;
+        font-family: $font-BeVietnamPro-SemiBold;
+      }
+    }
+  }
   &__doanhnghiep{
     &__section{
 
@@ -23,7 +49,10 @@
     }
     &__item{
       &:nth-child(n+2){
-        margin-top: 100px;
+        margin-top: 40px;
+        @include media-breakpoint-up('m'){
+          margin-top: 100px;
+        }
       }
     }
   }

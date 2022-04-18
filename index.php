@@ -199,7 +199,7 @@
 <!--/ĐỘI NGŨ GIẢNG VIÊN-->
 
 <!--BẠN ĐÃ SẴN SÀNG ĐỂ TRỞ THÀNH SINH VIÊN ĐẠI HỌC FPT?-->
-<div class="home__dangky__section uk-position-relative uk-overflow-hidden uk-section-large uk-background-norepeat uk-background-center-center uk-background-cover" data-src="images/1x/bg2.png" uk-img uk-parallax="bgy: -200">
+<div class="home__dangky__section uk-position-relative uk-overflow-hidden uk-section-large uk-background-norepeat uk-background-center-center uk-background-cover" data-src="images/1x/bg2.png" uk-img uk-parallax="bgy: -150">
     <div class="uk-container">
         <div class="uk-grid-small" uk-grid>
             <div class="uk-width-expand">

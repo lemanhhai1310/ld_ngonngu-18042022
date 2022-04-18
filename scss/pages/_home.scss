@@ -1,0 +1,18 @@
+.home{
+  &__dangky{
+    &__section{
+      background-color: #A0360E;
+    }
+  }
+  &__trainghiem{
+    &__section{
+      background: #D1D3D3;
+    }
+    &__title{
+      @extend .fz-30;
+      color: #D67126;
+      line-height: (38/30);
+      font-family: $font-BeVietnamPro-Black;
+    }
+  }
+}

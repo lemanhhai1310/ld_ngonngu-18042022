@@ -4,6 +4,13 @@
  * --------------------------------------------------------------------
  */
 @font-face{
+  font-family:'Be Vietnam Pro Italic';
+  font-display: auto;
+  src:local('Be Vietnam Pro Italic'), url('fonts/BeVietnamPro-Italic.ttf') format('truetype');
+  font-weight:normal;
+  font-style:normal;
+}
+@font-face{
   font-family:'Be Vietnam Pro Black';
   font-display: auto;
   src:local('Be Vietnam Pro Black'), url('fonts/BeVietnamPro-Black.ttf') format('truetype');

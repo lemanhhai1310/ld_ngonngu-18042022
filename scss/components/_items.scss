@@ -64,6 +64,7 @@
   &__#{$x}{
     &:nth-child(n+2){
       margin-top: #{$x}px;
+      .home__dangky__section &,
       .home__trainghiem__section &,
       .footer__top &,
       .home__banner &,

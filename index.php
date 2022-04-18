@@ -3,11 +3,53 @@
 <?php require "template-parts/layouts/header.php"; ?>
 
 <!--BẠN ĐÃ SẴN SÀNG ĐỂ TRỞ THÀNH SINH VIÊN ĐẠI HỌC FPT?-->
-<div class="home__dangky__section uk-position-relative uk-overflow-hidden uk-section uk-background-norepeat uk-background-center-center uk-background-cover" data-src="images/1x/bg1.png" uk-img>
+<div class="home__dangky__section uk-position-relative uk-overflow-hidden uk-section-large uk-background-norepeat uk-background-center-center uk-background-cover" data-src="images/1x/bg2.png" uk-img uk-parallax="bgy: -200">
     <div class="uk-container">
-
+        <div class="uk-grid-small" uk-grid>
+            <div class="uk-width-expand">
+                <div class="home__dangky__txt1">
+                    BẠN ĐÃ SẴN SÀNG ĐỂ <br class="uk-visible@m">
+                    TRỞ THÀNH SINH VIÊN <br class="uk-visible@m">
+                    ĐẠI HỌC FPT?
+                </div>
+                <div class="home__dangky__txt2">Đăng ký tư vấn ngay!</div>
+            </div>
+            <div class="uk-width-1-3@m">
+                <div class="home__dangky__card uk-card uk-card-default uk-card-body">
+                    <div class="item__30">
+                        <div class="uk-text-center home__dangky__card__title">ĐĂNG KÝ TƯ VẤN</div>
+                    </div>
+                    <div class="item__30">
+                        <div class="item__16">
+                            <input class="uk-input home__dangky__card__input" type="text" placeholder="Họ và tên">
+                        </div>
+                        <div class="item__16">
+                            <input class="uk-input home__dangky__card__input" type="tel" placeholder="Điện thoại">
+                        </div>
+                        <div class="item__16">
+                            <input class="uk-input home__dangky__card__input" type="email" placeholder="Email">
+                        </div>
+                        <div class="item__16">
+                            <input class="uk-input home__dangky__card__input" type="text" placeholder="Tỉnh / Thành phố">
+                        </div>
+                    </div>
+                    <div class="item__30 uk-text-center">
+                        <button class="home__dangky__card__btn uk-button uk-button-default uk-border-pill"><span>ĐĂNG KÝ</span></button>
+                    </div>
+                </div>
+            </div>
+            <div class="uk-hidden@m">
+                <div class="uk-flex-center" uk-grid>
+                    <div class="uk-width-4-5">
+                        <img class="home__dangky__imgBgm" uk-scrollspy="cls: uk-animation-slide-bottom; repeat: false" src="images/2D1A4618.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-    <img src="" alt="">
+    <div class="uk-position-bottom-center uk-visible@m">
+        <img uk-scrollspy="cls: uk-animation-slide-bottom; repeat: false" class="home__dangky__imgBg" src="images/2D1A4618.png" alt="">
+    </div>
 </div>
 <!--/BẠN ĐÃ SẴN SÀNG ĐỂ TRỞ THÀNH SINH VIÊN ĐẠI HỌC FPT?-->
 

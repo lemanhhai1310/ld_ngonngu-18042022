@@ -1,7 +1,58 @@
 .home{
   &__dangky{
+    &__card{
+      box-shadow: 7px 7px 20px rgba(255, 103, 0, 0.75);
+      $x:16px;
+      border-radius: #{$x};
+      //min-height: 465px;
+      &__title{
+        color: #D67126;
+        @extend .fz-20;
+        line-height: (25/20);
+        font-family: $font-BeVietnamPro-Bold;
+      }
+      &__btn{
+        background: #D67126;
+        border-color: #D67126;
+        color: #ffffff;
+        span{
+          @extend .fz-18;
+          font-family: $font-BeVietnamPro-Bold;
+        }
+      }
+      &__input{
+        color: #666666;
+        @extend .fz-16;
+        font-family: $font-BeVietnamPro-Regular;
+        border-color: #808080;
+      }
+    }
     &__section{
       background-color: #A0360E;
+      //min-height: 667px;
+      @include media-breakpoint-down('s'){
+        padding-bottom: 0;
+        min-height: initial !important;
+      }
+    }
+    &__imgBg{
+      max-width: 398px;
+    }
+    &__imgBgm{
+
+    }
+    &__txt1{
+      font-family: $font-BeVietnamPro-Black;
+      @extend .home__dangky__dc;
+    }
+    &__txt2{
+      @extend .home__dangky__dc;
+      font-family: $font-BeVietnamPro-Italic;
+    }
+    &__dc{
+      line-height: (50.4/42);
+      @extend .fz-42;
+      color: #ffffff;
     }
   }
   &__trainghiem{

@@ -1,4 +1,32 @@
 .home{
+  &__doanhnghiep{
+    &__section{
+
+    }
+    &__txt1{
+      @extend .fz-52;
+      font-family: $font-BeVietnamPro-Bold;
+      line-height: (62/52);
+      color: #D67126;
+    }
+    &__txt2{
+      @extend .fz-16;
+      line-height: (19/16);
+      color: #4D4D4D;
+      text-transform: uppercase;
+      font-family: $font-BeVietnamPro-Medium;
+    }
+    &__item1{
+      &:nth-child(n+2){
+        margin-top: 30px;
+      }
+    }
+    &__item{
+      &:nth-child(n+2){
+        margin-top: 100px;
+      }
+    }
+  }
   &__visao{
     &__section{
       background: #DD6C08;
@@ -24,6 +52,11 @@
       background-color: #A82400;
       background-repeat: no-repeat;
       background-position: center;
+    }
+    &__btn{
+      background: #A82400;
+      border-color: #A82400;
+      color: #FFFFFF;
     }
   }
   &__thongbao{

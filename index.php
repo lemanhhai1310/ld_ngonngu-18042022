@@ -2,6 +2,54 @@
 <?php $body = '' ?>
 <?php require "template-parts/layouts/header.php"; ?>
 
+<!--DOANH NGHIỆP TUYỂN DỤNG SINH VIÊN ĐẠI HỌC FPT-->
+<div class="uk-section home__doanhnghiep__section">
+    <div class="uk-container">
+        <div class="home__doanhnghiep__item">
+            <div class="uk-flex-middle" uk-grid>
+                <div class="uk-width-expand">
+                    <div class="home__doanhnghiep__item1 uk-text-center">
+                        <div class="home__doanhnghiep__txt1">5<i class="fa fa-star" aria-hidden="true"></i></div>
+                        <div class="home__doanhnghiep__txt2">CHẤT LƯỢNG ĐÀO TẠO</div>
+                    </div>
+                    <div class="home__doanhnghiep__item1 uk-text-center">
+                        <div class="home__doanhnghiep__txt1">100%</div>
+                        <div class="home__doanhnghiep__txt2">sinh viên được <br>
+                            nhà tuyển dụng chào đón</div>
+                    </div>
+                    <div class="home__doanhnghiep__item1 uk-text-center">
+                        <div class="home__doanhnghiep__txt1">100%</div>
+                        <div class="home__doanhnghiep__txt2">sinh viên có học kỳ nước ngoài <br>
+                            và trải nghiệm quốc tế</div>
+                    </div>
+                    <div class="home__doanhnghiep__item1 uk-text-center">
+                        <div class="home__doanhnghiep__txt1">98%</div>
+                        <div class="home__doanhnghiep__txt2">sinh viên <br>
+                            có việc làm ngay</div>
+                    </div>
+                    <div class="home__doanhnghiep__item1 uk-text-center">
+                        <div class="home__doanhnghiep__txt1">19%</div>
+                        <div class="home__doanhnghiep__txt2">sinh viên làm việc <br>
+                            tại nước ngoài</div>
+                    </div>
+                </div>
+                <div class="uk-width-auto@m">
+                    <img src="images/doanhnghiep/1x/bg1_1.png" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="home__doanhnghiep__item">
+            <div class="item__30">
+                <h3 class="uk-text-center home__trainghiem__title">DOANH NGHIỆP TUYỂN DỤNG SINH VIÊN ĐẠI HỌC FPT</h3>
+            </div>
+            <div class="item__30">
+                <img src="images/doanhnghiep/1x/logo1.png" alt="">
+            </div>
+        </div>
+    </div>
+</div>
+<!--/DOANH NGHIỆP TUYỂN DỤNG SINH VIÊN ĐẠI HỌC FPT-->
+
 <!--VÌ SAO HƠN 50,000 SINH VIÊN CHỌN ĐẠI HỌC FPT?-->
 <div class="uk-section-large home__visao__section uk-light">
     <div class="uk-container">
@@ -48,6 +96,9 @@
                     </div>
                 </div>
                 <?php endforeach; ?>
+                <div class="uk-width-1-1 uk-text-center">
+                    <a href="" class="uk-button uk-button-default home__visao__btn uk-border-pill"><span>ĐĂNG KÝ</span></a>
+                </div>
             </div>
         </div>
     </div>

@@ -1,4 +1,70 @@
 .home{
+  &__thongbao{
+    &__section{
+      background: #FCF0E8;
+    }
+    &__card{
+      //min-height: 53px;
+      background: #FFFFFF;
+      padding: 16px 16px;
+      padding-left: 50px;
+      position: relative;
+      &:before{
+        content: attr(data-count);
+        position: absolute;
+        top: -17px;
+        left: 11px;
+        //@extend .fz-33;
+        font-size: 33px;
+        color: #D67126;
+        font-family: $font-Gotham-Ultra;
+      }
+      &__txt{
+        @extend .fz-16;
+        font-family: $font-BeVietnamPro-Regular;
+        color: #231F20;
+      }
+      &__note{
+        @extend .fz-14;
+        font-family: $font-BeVietnamPro-Regular;
+        color: #231F20;
+      }
+    }
+    &__tab{
+      margin-bottom: 0;
+      >li{
+        >a{
+          color: #1D1D1B;
+          @extend .fz-18;
+          font-family: $font-BeVietnamPro-SemiBold;
+          background: #D3D3D3;
+          $x:10px;
+          border-radius: #{$x} #{$x} 0 0;
+        }
+        &.uk-active{
+          >a{
+            background: #D67126;
+            border-color: #D67126;
+            color: #ffffff;
+          }
+        }
+      }
+    }
+    &__txt{
+      @extend .fz-16;
+      font-family: $font-BeVietnamPro-SemiBold;
+      color: #1D1D1B;
+    }
+    &__switch{
+      min-height: 526px;
+      box-sizing: content-box;
+      background: #AEAEAE;
+      padding: 24px;
+      @include media-breakpoint-up('m'){
+        padding: 24px 70px;
+      }
+    }
+  }
   &__sinhvien{
     &__section{
       background: #D66200;
@@ -135,6 +201,7 @@
       color: #D67126;
       line-height: (38/30);
       font-family: $font-BeVietnamPro-Black;
+      text-transform: uppercase;
     }
   }
 }

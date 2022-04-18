@@ -2,6 +2,123 @@
 <?php $body = '' ?>
 <?php require "template-parts/layouts/header.php"; ?>
 
+<!--Thông báo tuyển sinh hệ đại học chính quy Đại học FPT năm 2022-->
+<div class="uk-section home__thongbao__section">
+    <div class="uk-container">
+        <div class="item__30">
+            <h3 class="uk-text-center home__trainghiem__title">Thông báo tuyển sinh <br class="uk-visible@m">
+                hệ đại học chính quy Đại học FPT năm 2022</h3>
+        </div>
+        <div class="item__30">
+            <ul class="uk-child-width-expand home__thongbao__tab uk-flex-bottom" uk-tab>
+                <li class="uk-active"><a href="#">PHƯƠNG THỨC TUYỂN SINH</a></li>
+                <li><a href="#">THỦ TỤC XÉT TUYỂN</a></li>
+                <li><a href="#">ĐĂNG KÝ & NỘP PHÍ</a></li>
+            </ul>
+            <ul class="uk-switcher home__thongbao__switch">
+                <li>
+                    <div class="uk-grid-small" uk-grid>
+                        <div class="uk-width-1-1">
+                            <div class="uk-text-center home__thongbao__txt">
+                                Đối tượng tuyển sinh Các thí sinh tốt nghiệp THPT hoặc tương đương tính đến thời điểm nhập học
+                                <br class="uk-visible@m">
+                                Điều kiện xét tuyển Đáp ứng một trong các điều kiện sau
+                            </div>
+                        </div>
+                        <div class="uk-width-1-1">
+                            <div class="uk-child-width-1-2@m uk-grid-small uk-grid-20-m" uk-grid>
+                                <?php
+                                $data = array(
+                                    array(
+                                        'txt' => 'Thuộc diện được tuyển thẳng theo Quy chế tuyển sinh Đại học, Cao đẳng hệ đại học chính quy của Bộ GD&ĐT.',
+                                        'note' => '',
+                                    ),
+                                    array(
+                                        'txt' => 'Điểm học bạ thuộc Top50 THPT toàn quốc',
+                                        'note' => '(chứng nhận thực hiện trên trang http://SchoolRank.fpt.edu.vn)',
+                                    ),
+                                    array(
+                                        'txt' => 'Điểm các môn thi trong kỳ thi THPT 2020 thuộc Top50 THPT toàn quốc (theo số liệu Đại học FPT tổng hợp và công bố sau kỳ thi THPT 2020) và điểm theo khối xét tuyển đạt từ trung bình trở lên (15/30 điểm).',
+                                        'note' => '',
+                                    ),
+                                    array(
+                                        'txt' => 'Ngành Ngôn Ngữ Anh: Có chứng chỉ tiếng Anh TOEFL iBT từ 80 hoặc IELTS (Học thuật) từ 6.0 hoặc quy đổi tương đương.',
+                                        'note' => '',
+                                    ),
+                                    array(
+                                        'txt' => 'Ngành Ngôn Ngữ Nhật: Có chứng chỉ tiếng Nhật JLPT từ N3 trở lên.',
+                                        'note' => '',
+                                    ),
+                                    array(
+                                        'txt' => 'Tốt nghiệp Chương trình APTECH HDSE.',
+                                        'note' => '(áp dụng đối với ngành CNTT)',
+                                    ),
+                                    array(
+                                        'txt' => 'Ngành Ngôn Ngữ Hàn: <br/> Chứng chỉ Topik cấp độ 4 trong kỳ thi TOPIK II',
+                                        'note' => '',
+                                    ),
+                                    array(
+                                        'txt' => 'Tốt nghiệp Chương trình ARENA ADIM.',
+                                        'note' => '(áp dụng đối với chuyên ngành Thiết kế Mỹ thuật số)',
+                                    ),
+                                    array(
+                                        'txt' => 'Đã tốt nghiệp Đại học.',
+                                        'note' => '',
+                                    ),
+                                    array(
+                                        'txt' => 'Thí sinh tốt nghiệp THPT ở nước ngoài',
+                                        'note' => '',
+                                    ),
+                                );
+                                $count = ceil(count($data)/2); ?>
+                                <div>
+                                    <div class="uk-child-width-1-1@m uk-grid-match uk-grid-small uk-grid-20-m" uk-grid>
+                                        <?php foreach ($data as $k=>$v): ?>
+                                            <?php if (($k+1)<= $count): ?>
+                                                <div>
+                                                    <div class="home__thongbao__card" data-count="<?= $k+1 ?>">
+                                                        <div class="home__thongbao__card__txt"><?= $v['txt'] ?></div>
+                                                        <?php if (!empty($v['note'])): ?>
+                                                            <div class="home__thongbao__card__note"><?= $v['note'] ?></div>
+                                                        <?php endif; ?>
+                                                    </div>
+                                                </div>
+                                            <?php else: ?>
+
+                                            <?php endif; ?>
+                                        <?php endforeach; ?>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="uk-child-width-1-1@m uk-grid-match uk-grid-small uk-grid-20-m" uk-grid>
+                                        <?php foreach ($data as $k=>$v): ?>
+                                            <?php if (($k+1)<= $count): ?>
+
+                                            <?php else: ?>
+                                                <div>
+                                                    <div class="home__thongbao__card" data-count="<?= $k+1 ?>">
+                                                        <div class="home__thongbao__card__txt"><?= $v['txt'] ?></div>
+                                                        <?php if (!empty($v['note'])): ?>
+                                                            <div class="home__thongbao__card__note"><?= $v['note'] ?></div>
+                                                        <?php endif; ?>
+                                                    </div>
+                                                </div>
+                                            <?php endif; ?>
+                                        <?php endforeach; ?>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
+                <li>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur, sed do eiusmod.</li>
+            </ul>
+        </div>
+    </div>
+</div>
+<!--/Thông báo tuyển sinh hệ đại học chính quy Đại học FPT năm 2022-->
+
 <!--SINH VIÊN, PHỤ HUYNH, DOANH NGHIỆP NÓI GÌ?-->
 <div class="uk-section home__sinhvien__section uk-light">
     <div class="uk-container">

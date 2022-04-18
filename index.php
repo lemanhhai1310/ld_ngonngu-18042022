@@ -2,6 +2,102 @@
 <?php $body = '' ?>
 <?php require "template-parts/layouts/header.php"; ?>
 
+<!--ĐỘI NGŨ GIẢNG VIÊN-->
+<div class="uk-section home__doingu__section">
+    <div class="uk-container">
+        <div class="item__30">
+            <div class="uk-text-center home__trainghiem__title">ĐỘI NGŨ GIẢNG VIÊN</div>
+        </div>
+        <div class="item__30">
+            <div uk-slider>
+
+                <div class="uk-position-relative">
+
+                    <div class="uk-slider-container uk-light">
+                        <ul class="uk-slider-items uk-child-width-1-1 uk-child-width-1-2@s uk-child-width-1-3@m uk-grid-small uk-grid-30-m uk-grid-match" uk-grid>
+                            <?php
+                            $data = array(
+                                array(
+                                    'src' => 'images/doingu/1x/img1.png',
+                                    'txt1' => 'Cô Kuriko Shinozaki',
+                                    'txt2' => 'Giảng viên ngành Ngôn ngữ Nhật',
+                                    'desc' => 'FPT là trường ĐH khác biệt, mới mẻ, tôi bị ấn tượng bởi các bạn sinh viên dễ mến, chân thật, cũng có em cá tính. Mối quan hệ giữa giảng viên và sinh viên rất thân thiện, cởi mở. Việc giảng dạy và tổ chức hoạt động ngoại khoá khá vất vả nhưng tôi cảm thấy vui vì năng lực tiếng Nhật, sự tự tin trong giao tiếp của SV ngày trở nên tốt hơn.',
+                                ),
+                                array(
+                                    'src' => 'images/doingu/1x/img2.png',
+                                    'txt1' => 'Cô Karen Cheer Badong',
+                                    'txt2' => 'Giảng viên ngành Ngôn ngữ Anh',
+                                    'desc' => 'Sinh viên FPTU có tư duy cởi mở, kiên trì và khiêm tốn. Các em đều có cách riêng và độc đáo để thể hiện cá tính của mình. Tuy nhiên, trong những điểm khác biệt đó, một điểm chung ở họ là cảm giác háo hức muốn thành công trong bất cứ con đường sự nghiệp nào họ đã chọn. Các em cũng rất chăm chỉ và đề cao tình yêu thương vô điều kiện mà cha mẹ dành cho mình.',
+                                ),
+                                array(
+                                    'src' => 'images/doingu/1x/img3.png',
+                                    'txt1' => 'Thầy Lyndon Britanico Badong',
+                                    'txt2' => 'Giảng viên ngành Ngôn ngữ Anh',
+                                    'desc' => 'Tôi rất hài lòng khi được làm việc tại FPTU. Đầu tiên phải kể đến không gian làm việc xanh, thiên nhiên xung quanh trong lành và thanh bình. Có những lúc trong giờ giải lao, chúng tôi đi dạo quanh khuôn viên trường chỉ để giải tỏa đầu óc và F5 một chút. Thứ hai, đồng nghiệp và sinh viên ở FPTU tôn trọng sự khác biệt chúng tôi. Những giảng viên nước ngoài như chúng tôi đều đặt mục tiêu cao nhất để làm tốt việc của mình.',
+                                ),
+                                array(
+                                    'src' => 'images/doingu/1x/img1.png',
+                                    'txt1' => 'Cô Kuriko Shinozaki',
+                                    'txt2' => 'Giảng viên ngành Ngôn ngữ Nhật',
+                                    'desc' => 'FPT là trường ĐH khác biệt, mới mẻ, tôi bị ấn tượng bởi các bạn sinh viên dễ mến, chân thật, cũng có em cá tính. Mối quan hệ giữa giảng viên và sinh viên rất thân thiện, cởi mở. Việc giảng dạy và tổ chức hoạt động ngoại khoá khá vất vả nhưng tôi cảm thấy vui vì năng lực tiếng Nhật, sự tự tin trong giao tiếp của SV ngày trở nên tốt hơn.',
+                                ),
+                                array(
+                                    'src' => 'images/doingu/1x/img2.png',
+                                    'txt1' => 'Cô Karen Cheer Badong',
+                                    'txt2' => 'Giảng viên ngành Ngôn ngữ Anh',
+                                    'desc' => 'Sinh viên FPTU có tư duy cởi mở, kiên trì và khiêm tốn. Các em đều có cách riêng và độc đáo để thể hiện cá tính của mình. Tuy nhiên, trong những điểm khác biệt đó, một điểm chung ở họ là cảm giác háo hức muốn thành công trong bất cứ con đường sự nghiệp nào họ đã chọn. Các em cũng rất chăm chỉ và đề cao tình yêu thương vô điều kiện mà cha mẹ dành cho mình.',
+                                ),
+                                array(
+                                    'src' => 'images/doingu/1x/img3.png',
+                                    'txt1' => 'Thầy Lyndon Britanico Badong',
+                                    'txt2' => 'Giảng viên ngành Ngôn ngữ Anh',
+                                    'desc' => 'Tôi rất hài lòng khi được làm việc tại FPTU. Đầu tiên phải kể đến không gian làm việc xanh, thiên nhiên xung quanh trong lành và thanh bình. Có những lúc trong giờ giải lao, chúng tôi đi dạo quanh khuôn viên trường chỉ để giải tỏa đầu óc và F5 một chút. Thứ hai, đồng nghiệp và sinh viên ở FPTU tôn trọng sự khác biệt chúng tôi. Những giảng viên nước ngoài như chúng tôi đều đặt mục tiêu cao nhất để làm tốt việc của mình.',
+                                ),
+                            );
+                            foreach ($data as $k=>$v): ?>
+                            <li>
+                                <div class="home__doingu__card uk-card uk-card-body">
+                                    <div class="item__25 home__doingu__card__box1">
+                                        <div class="uk-text-center">
+                                            <div class="uk-cover-container uk-flex-inline uk-border-circle">
+                                                <img src="<?= $v['src'] ?>" alt="" uk-cover="">
+                                                <canvas width="129" height="129"></canvas>
+                                            </div>
+                                        </div>
+                                        <div class="uk-text-center">
+                                            <div class="home__doingu__card__txt"><?= $v['txt1'] ?></div>
+                                            <div class="home__doingu__card__txt"><?= $v['txt2'] ?></div>
+                                        </div>
+                                    </div>
+                                    <div class="item__25">
+                                        <div class="home__doingu__card__desc"><?= $v['desc'] ?></div>
+                                    </div>
+                                </div>
+                            </li>
+                            <?php endforeach; ?>
+                        </ul>
+                    </div>
+
+                    <div class="uk-hidden@s uk-light">
+                        <a class="uk-position-center-left uk-position-small" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
+                        <a class="uk-position-center-right uk-position-small" href="#" uk-slidenav-next uk-slider-item="next"></a>
+                    </div>
+
+                    <div class="uk-visible@s">
+                        <a class="uk-position-center-left-out uk-position-small home__doingu__slidenav home__doingu__slidenav--prev" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
+                        <a class="uk-position-center-right-out uk-position-small home__doingu__slidenav home__doingu__slidenav--next" href="#" uk-slidenav-next uk-slider-item="next"></a>
+                    </div>
+
+                </div>
+
+                <ul class="uk-slider-nav uk-dotnav uk-flex-center uk-margin"></ul>
+
+            </div>
+        </div>
+    </div>
+</div>
+<!--/ĐỘI NGŨ GIẢNG VIÊN-->
+
 <!--BẠN ĐÃ SẴN SÀNG ĐỂ TRỞ THÀNH SINH VIÊN ĐẠI HỌC FPT?-->
 <div class="home__dangky__section uk-position-relative uk-overflow-hidden uk-section-large uk-background-norepeat uk-background-center-center uk-background-cover" data-src="images/1x/bg2.png" uk-img uk-parallax="bgy: -200">
     <div class="uk-container">

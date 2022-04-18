@@ -64,6 +64,7 @@
   &__#{$x}{
     &:nth-child(n+2){
       margin-top: #{$x}px;
+      .home__doingu__section &,
       .home__dangky__section &,
       .home__trainghiem__section &,
       .footer__top &,
@@ -78,6 +79,12 @@
     }
   }
   $x:28;
+  &__#{$x}{
+    &:nth-child(n+2){
+      margin-top: #{$x}px;
+    }
+  }
+  $x:25;
   &__#{$x}{
     &:nth-child(n+2){
       margin-top: #{$x}px;

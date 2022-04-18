@@ -1,4 +1,32 @@
 .home{
+  &__sinhvien{
+    &__section{
+      background: #D66200;
+    }
+    &__card{
+      $x:6px;
+      border-radius: #{$x};
+      overflow: hidden;
+      &__body{
+        $x1:24px;
+        padding: #{$x1};
+      }
+      &__footer{
+        background-color: #A82400;
+        $x1:24px;
+        padding: 16px #{$x1};
+      }
+      &__box{
+        margin-top: -20px;
+      }
+      &__desc{
+        color: #1D1D1B;
+        @extend .fz-16;
+        font-family: $font-Roboto-Italic;
+        line-height: (19/16);
+      }
+    }
+  }
   &__doingu{
     &__section{
 
@@ -17,7 +45,7 @@
       }
     }
     &__card{
-      background: #D67126;
+      background: #DD6C08;
       $x:6px;
       border-radius: #{$x};
       $y:60px;

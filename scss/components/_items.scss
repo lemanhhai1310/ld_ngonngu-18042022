@@ -64,6 +64,7 @@
   &__#{$x}{
     &:nth-child(n+2){
       margin-top: #{$x}px;
+      .home__visao__section &,
       .home__sinhvien__section &,
       .home__doingu__section &,
       .home__dangky__section &,

@@ -2,6 +2,58 @@
 <?php $body = '' ?>
 <?php require "template-parts/layouts/header.php"; ?>
 
+<!--VÌ SAO HƠN 50,000 SINH VIÊN CHỌN ĐẠI HỌC FPT?-->
+<div class="uk-section-large home__visao__section uk-light">
+    <div class="uk-container">
+        <div class="item__30">
+            <h3 class="uk-text-center home__trainghiem__title">VÌ SAO HƠN 50,000 SINH VIÊN CHỌN ĐẠI HỌC FPT?</h3>
+        </div>
+        <div class="item__30">
+            <div class="uk-child-width-1-2@m" uk-grid>
+                <?php
+                $data = array(
+                    array(
+                        'src' => 'images/visao/1x/icon1.png',
+                        'txt' => 'CHẤT LƯỢNG ĐÀO TẠO QUỐC TẾ',
+                        'desc' => '100% giáo trình bằng tiếng Anh được nhập khẩu trực tiếp từ các nhà xuất bản nổi tiếng trên thế giới và các quốc gia phát triển để dạy sinh viên. Sinh viên không chỉ được học về nền tảng ngôn ngữ, văn hóa và văn học mà còn được trang bị các kiến thức chuyên sâu và thuật ngữ chuyên ngành của cả hai khối ngành CNTT và Kinh tế.',
+                    ),
+                    array(
+                        'src' => 'images/visao/1x/icon2.png',
+                        'txt' => 'CƠ SỞ VẬT CHẤT HIỆN ĐẠI',
+                        'desc' => 'Không chỉ sở hữu phòng Lab hiện đại, Đại học FPT còn nổi tiếng với các phòng học và khuôn viên đẹp như resort 5 sao. Giảng đường được phân chia thành các phòng học nhỏ với diện tích trung bình 50m2. Trong mỗi phòng học đều có điều hòa, wifi, máy chiếu, với quy mô tối đa 25-30 sinh viên/lớp nhằm tăng cường sự tương tác giữa giảng viên và sinh viên.',
+                    ),
+                    array(
+                        'src' => 'images/visao/1x/icon3.png',
+                        'txt' => 'DU HỌC NGẮN HẠN VÀ THỰC TẬP NƯỚC NGOÀI',
+                        'desc' => 'Sinh viên các ngành ngôn ngữ sẽ có 1 – 2 học kỳ chuyên ngành tại các quốc gia như Singapore, Philippines, Anh, Mỹ, Nhật, Singapore, Thái Lan… với mức phí tương đương học kỳ trong nước. Năm thứ 3, sinh viên làm việc thực tế từ 4 – 8 tháng tại các doanh nghiệp trong và ngoài nước trong học kỳ Thực tập tại doanh nghiệp (On the Job Training). ',
+                    ),
+                    array(
+                        'src' => 'images/visao/1x/icon4.png',
+                        'txt' => 'MÔI TRƯỜNG HỌC TẬP NĂNG ĐỘNG',
+                        'desc' => 'Không chỉ giúp sinh viên vững vàng về tri thức, ngoại ngữ, ĐH FPT còn chú trọng phát triển cá nhân. Với nhiều hoạt động ngoại khoá, sự kiện dày đặc cùng hơn 40 CLB nhằm tạo cơ hội để sinh viên phát triển một cách toàn diện, nâng cao hiểu biết văn hoá, xã hội, trách nhiệm cộng đồng, năng lực cảm xúc...',
+                    ),
+                );
+                foreach ($data as $k=>$v): ?>
+                <div>
+                    <div class="home__visao__item uk-text-center">
+                        <div class="home__visao__boxImg uk-cover-container uk-border-circle uk-flex-inline" data-src="<?= $v['src'] ?>" uk-img>
+                            <canvas width="142" height="142"></canvas>
+                        </div>
+                    </div>
+                    <div class="home__visao__item">
+                        <div class="home__visao__title"><?= $v['txt'] ?></div>
+                    </div>
+                    <div class="home__visao__item">
+                        <div class="home__visao__desc"><?= $v['desc'] ?></div>
+                    </div>
+                </div>
+                <?php endforeach; ?>
+            </div>
+        </div>
+    </div>
+</div>
+<!--/VÌ SAO HƠN 50,000 SINH VIÊN CHỌN ĐẠI HỌC FPT?-->
+
 <!--Thông báo tuyển sinh hệ đại học chính quy Đại học FPT năm 2022-->
 <div class="uk-section home__thongbao__section">
     <div class="uk-container">

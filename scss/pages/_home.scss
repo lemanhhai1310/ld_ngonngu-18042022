@@ -1,4 +1,31 @@
 .home{
+  &__visao{
+    &__section{
+      background: #DD6C08;
+    }
+    &__item{
+      &:nth-child(n+2){
+        margin-top: 20px;
+      }
+    }
+    &__title{
+      text-align: center;
+      @extend .fz-22;
+      font-family: $font-BeVietnamPro-SemiBold;
+      color: #FFFFFF;
+      line-height: (26/22);
+    }
+    &__desc{
+      @extend .fz-16;
+      line-height: (19/16);
+      color: #FFFFFF;
+    }
+    &__boxImg{
+      background-color: #A82400;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+  }
   &__thongbao{
     &__section{
       background: #FCF0E8;
@@ -60,6 +87,8 @@
       box-sizing: content-box;
       background: #AEAEAE;
       padding: 24px;
+      $x:30px;
+      border-radius: 0 0 #{$x} #{$x};
       @include media-breakpoint-up('m'){
         padding: 24px 70px;
       }
